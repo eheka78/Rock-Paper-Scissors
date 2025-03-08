@@ -1,4 +1,4 @@
-#### one day project [ toy project ]
+#### 24-Hour ± α  project [ toy project ]
 # Rock-Paper-Scissors
 
 ### SKILLS
