@@ -11,7 +11,7 @@
 <br><br>
 
 ## GOAL
-This project is to practice handling network requests using the <b>Fetch</b> API.
+This project is to practice handling network requests using the <b>Fetch API</b>.
 
 <br><br>
 
