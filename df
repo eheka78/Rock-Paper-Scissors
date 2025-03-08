@@ -1,0 +1,41 @@
+* [33mcommit 596bd0f0332732873123df101b21512c16e9181d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+[31m|[m Author: eheka78 <gemddkim22@gmail.com>
+[31m|[m Date:   Sun Mar 9 03:50:07 2025 +0900
+[31m|[m 
+[31m|[m     build
+[31m|[m 
+* [33mcommit 60d13e73318b29af5bd5d46137696ef93315e3ca[m
+[31m|[m Author: eheka78 <gemddkim22@gmail.com>
+[31m|[m Date:   Sun Mar 9 03:47:47 2025 +0900
+[31m|[m 
+[31m|[m     create RPS_B.jsp
+[31m|[m 
+* [33mcommit 148de7d121b62fdd74481502780301ca91235af9[m
+[31m|[m Author: eheka78 <gemddkim22@gmail.com>
+[31m|[m Date:   Sun Mar 9 03:47:27 2025 +0900
+[31m|[m 
+[31m|[m     create RPS_A.jsp
+[31m|[m 
+* [33mcommit 496bc21875efc602189e61e4335d2932e7305738[m
+[31m|[m Author: eheka78 <gemddkim22@gmail.com>
+[31m|[m Date:   Sun Mar 9 03:46:34 2025 +0900
+[31m|[m 
+[31m|[m     create index.jsp
+[31m|[m 
+* [33mcommit b58774fe22d2aade81986a0d2a7254d866a542b7[m
+[31m|[m Author: eheka78 <gemddkim22@gmail.com>
+[31m|[m Date:   Sat Mar 8 17:52:14 2025 +0900
+[31m|[m 
+[31m|[m     create project
+[31m|[m 
+* [33mcommit 9b10cec2c4862b6227f4591184ba5e9262e2b140[m[33m ([m[1;31morigin/master[m[33m)[m
+[31m|[m Author: eheka78 <123297062+eheka78@users.noreply.github.com>
+[31m|[m Date:   Sat Mar 8 17:21:01 2025 +0900
+[31m|[m 
+[31m|[m     Create LICENSE
+[31m|[m 
+* [33mcommit e83fecf449e481f156c22a912ba4004995586d08[m
+  Author: eheka78 <123297062+eheka78@users.noreply.github.com>
+  Date:   Sat Mar 8 17:20:33 2025 +0900
+  
+      Initial commit
