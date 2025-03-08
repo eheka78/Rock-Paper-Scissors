@@ -10,6 +10,11 @@
 
 <br><br>
 
+## GOAL
+#### This project is to practice handling network requests using the <b>Fetch</b> API.
+
+<br><br>
+
 ## DEMONSTRATION
 
 #### 1. Rock-Paper-Scissors_A
@@ -21,3 +26,9 @@
 <br><br>
 
 ## GET STARTED
+
+<br><br>
+
+## UPDATE
+2025-03-09: START
+2025-03-09: Implement RPS_A, RPS_B function
