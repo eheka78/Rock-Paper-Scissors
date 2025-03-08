@@ -26,7 +26,7 @@ var score_B = 0;
 
 			<!-- reset 버튼 -->
 			<div style="display:inline-block;">
-				<button style="backgruond-color:lightgray; border-radius: 10px; width:70%;" onclick="reset()">reset</button>
+				<button style="backgruond-color:lightgray; border-radius:15px; width:70%; height:25px; cursor:pointer;" onclick="reset()">reset</button>
 			</div>
 		</div>
 		
@@ -34,14 +34,14 @@ var score_B = 0;
 		
 		<div style="margin:0px 20px; text-align:center;">
 			<!-- 결과 출력 -->
-			<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+			<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; font-weight:bold;">
 				<div>Opponent</div>
 				<div>Me</div>
 				
-				<div id="select_A" style="border:solid 1px black; border-radius:10px; padding:10px;">
+				<div id="select_A" style="border:solid 1px black; border-radius:10px; padding:30px 20px; font-size:20px;">
 				-
 				</div>
-				<div id="select_B" style="border:solid 1px black; border-radius:10px; padding:10px;">
+				<div id="select_B" style="border:solid 1px black; border-radius:10px; padding:30px 20px; font-size:20px;">
 				-
 				</div>
 				
@@ -51,13 +51,13 @@ var score_B = 0;
 			
 			<!-- 가위 바위 보 선택 버튼-->
 			<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; ">
-				<button id="btn_S" onclick="select_option('rock')" style="border:solid 1px black; border-radius:10px; padding:10px; background-color:white;">
+				<button id="btn_S" onclick="select_option('rock')" style="border:solid 1px black; border-radius:10px; padding:10px; background-color:white; cursor:pointer;">
 				rock
 				</button>
-				<button id="btn_P" onclick="select_option('paper')" style="border:solid 1px black; border-radius:10px; padding:10px; background-color:white;">
+				<button id="btn_P" onclick="select_option('paper')" style="border:solid 1px black; border-radius:10px; padding:10px; background-color:white; cursor:pointer;">
 				paper
 				</button>
-				<button id="btn_R" onclick="select_option('scissor')" style="border:solid 1px black; border-radius:10px; padding:10px; background-color:white;">
+				<button id="btn_R" onclick="select_option('scissor')" style="border:solid 1px black; border-radius:10px; padding:10px; background-color:white; cursor:pointer;">
 				scissor
 				</button>
 			</div>
