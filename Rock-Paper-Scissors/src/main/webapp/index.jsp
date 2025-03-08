@@ -113,6 +113,10 @@ var middle_winner = "";
 				setTimeout(function() {
 					document.getElementById("score_A").innerText = 0;
 					document.getElementById("score_B").innerText = 0;
+					document.getElementById("score_A").style.textDecoration = "none";
+					document.getElementById("score_A").style.textDecorationThickness = "none";
+					document.getElementById("score_B").style.textDecoration = "none";
+					document.getElementById("score_B").style.textDecorationThickness = "none";
 	            }, 1500);
 			}
 			
