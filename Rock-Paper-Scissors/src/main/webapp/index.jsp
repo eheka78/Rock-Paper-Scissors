@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>index</title>
 
+<!-- 사용하는 변수 선언 -->
 <script>
 var RPS_arr = new Array("rock", "paper", "scissor");
 var cnt = 0;
@@ -14,6 +15,7 @@ var me_select = 0;
 var game_value = document.getElementById("game").value;
 var middle_winner = "";
 </script>
+
 </head>
 <body style="margin:auto; background-color:#95B2F7; padding:50px 0px;">
 
@@ -69,7 +71,7 @@ var middle_winner = "";
 		</div>
 		
 		<!-- information -->
-		<div onclick="reveal_info_RPS()" style="text-decoration:underline solid 1px; font-size:10px; float:right;">
+		<div onclick="reveal_info_RPS()" style="text-decoration:underline solid 1px; font-size:10px; float:right; cursor:pointer;">
 		information
 		</div>
 		
@@ -96,6 +98,7 @@ var middle_winner = "";
 		<br><br>
 		
 		
+		
 		<!-- 게임 하는 영역 -->
 		<!-- fetch되는 영역 -->
 		<div id="game_screen" style="width:100%; margin:auto; border:solid 1px black;">
@@ -104,7 +107,7 @@ var middle_winner = "";
 		
 		
 		
-		
+		<!-- script of fetched file -->
 		<script>			
 			function reset() {
 				reset_value();
@@ -141,12 +144,9 @@ var middle_winner = "";
 				random_select_A();
 				game_value = document.getElementById("game").value;
 				if(game_value == "RPS_A"){
-					console.log("AAAAAAAAAAAAAAAAAAAAAAAAAAA");
 					calculate_score_1();
 				} else if(game_value == "RPS_B"){
 					calculate_score_2();
-
-					console.log("BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB");
 				}
 			}
 			
@@ -252,35 +252,15 @@ var middle_winner = "";
 		
 		
 		
-		
+		<!-- fetch -->
 		<script>
-			// 선택된 값에 따라 서버에서 데이터를 받아와 화면을 업데이트하는 함수
 			async function updateGameScreen(selectedValue) {
-				console.log("선택된 값: " + selectedValue);
-				if (selectedValue === "RPS_A") {
+				if (selectedValue === "RPS_A" || selectedValue === "RPS_B") {
 					try {
 						const response = await fetch("RPS_A.jsp");
 						if (!response.ok) {
 							throw new Error("네트워크 응답에 문제가 있습니다.");
 						}
-						// 서버가 텍스트 데이터를 반환한다고 가정
-						console.log("fetch 호출 시작");
-						const data = await response.text();
-						const gameScreen = document.getElementById("game_screen");
-						if (gameScreen) {
-							gameScreen.innerHTML = data;
-						}
-					} catch (error) {
-						console.error("데이터 로딩 중 오류 발생:", error);
-					}
-				} else if (selectedValue === "RPS_B") {
-					try {
-						const response = await fetch("RPS_B.jsp");
-						if (!response.ok) {
-							throw new Error("네트워크 응답에 문제가 있습니다.");
-						}
-						// 서버가 텍스트 데이터를 반환한다고 가정
-						console.log("fetch 호출 시작");
 						const data = await response.text();
 						const gameScreen = document.getElementById("game_screen");
 						if (gameScreen) {
@@ -293,12 +273,9 @@ var middle_winner = "";
 			}
 			
 		    document.addEventListener("DOMContentLoaded", function() {
-	    		console.log("DOM fully loaded");
 		        const gameSelect = document.getElementById("game");
 		        if (gameSelect) {
-		        	// 페이지 로드시 현재 선택된 값에 대해 실행
 		        	updateGameScreen(gameSelect.value);
-		        	// select 요소의 change 이벤트 리스너 등록
 		        	gameSelect.addEventListener("change", function() {
 		        		updateGameScreen(this.value);
 		        	});
