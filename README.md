@@ -31,4 +31,5 @@ This project is to practice handling network requests using the <b>Fetch API</b>
 
 ## UPDATE
 2025-03-09: START
+<br>
 2025-03-09: Implement RPS_A, RPS_B function
